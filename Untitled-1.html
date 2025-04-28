@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Match</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <h1 id="heading">Live Match</h1>
+    <div class="container">
+        <div id="scoreDisplay">
+            <h1 class="score" id="overallScore">Score: </h1>
+            <h2 class="score" id="runRate" style="font-size: 20px;"></h2>
+        </div>
+        <div id="batterContainer">
+            <table class="scoreTable" id="batterTable" style="border-collapse: collapse;">
+                <thead>
+                    <tr style="color: #6272a4;">
+                        <th style="width: 250px;">Batsman</th>
+                        <th>R</th>
+                        <th>B</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>SR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="strikeBatter">
+                        <td id="strikeName"></td>
+                        <td id="strikeRuns">0</td>
+                        <td id="strikeBalls">0</td>
+                        <td id="strikeFours">0</td>
+                        <td id="strikeSixes">0</td>
+                        <td id="strikeSR">0</td>
+                    </tr>
+                    <tr id="nonStrikeBatter">
+                        <td id="nonStrikeName"></td>
+                        <td id="nonStrikeRuns">0</td>
+                        <td id="nonStrikeBalls">0</td>
+                        <td id="nonStrikeFours">0</td>
+                        <td id="nonStrikeSixes">0</td>
+                        <td id="nonStrikeSR">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="bowlerContainer">
+            <table class="scoreTable" id="bowlerTable" style="border-collapse: collapse;">
+                <thead>
+                    <tr style="color: #6272a4;">
+                        <th style="width: 250px;">Bowler</th>
+                        <th>O</th>
+                        <th>M</th>
+                        <th>R</th>
+                        <th>W</th>
+                        <th>ECON</th>
+                        <th>WD</th>
+                        <th>NB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="bowler">
+                        <td id="bowlerName"></td>
+                        <td id="bowlerOvers"></td>
+                        <td id="bowlerMaidens"></td>
+                        <td id="bowlerRuns"></td>
+                        <td id="bowlerWickets"></td>
+                        <td id="bowlerEconomy"></td>
+                        <td id="bowlerWide"></td>
+                        <td id="bowlerNoBall"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="scoringButtons">
+            <button class="runBtn" data-run="0">0</button>
+            <button class="runBtn" data-run="1">1</button>
+            <button class="runBtn" data-run="2">2</button>
+            <button class="runBtn" data-run="3">3</button>
+            <button class="runBtn" data-run="4">4</button>
+            <button class="runBtn" data-run="6">6</button>
+            <button id="wicketBtn">Wicket</button>
+            <button id="wideBtn">Wide</button>
+            <button id="noBallBtn">No Ball</button>
+            <div id="extraDisplay" style="display: none;"></div>
+        </div>
+        <div id="navigation" style="text-align: center;">
+            <button id="scorecardBtn">Go to Scorecard</button>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+</html>

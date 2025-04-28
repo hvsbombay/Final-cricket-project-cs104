@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Match Setup - Howzatt!</title>
+  <link rel="stylesheet" href="setup.css" />
+</head>
+<body>
+  <div class="setup-container">
+    <h1>Match Setup</h1>
+    <form id="setupForm">
+    <label>Team 1 Name: <input type="text" id="team1" required/></label><br/>
+    <label>Team 2 Name: <input type="text" id="team2" required/></label><br/>
+    <label>Toss Winner:
+      <select id="tossWinner">
+        <option value="team1">Team 1</option>
+        <option value="team2">Team 2</option>
+      </select>
+    </label><br/>
+    <label>Toss Decision:
+      <select id="tossDecision">
+        <option value="bat">Bat</option>
+        <option value="bowl">Bowl</option>
+      </select>
+    </label><br/>
+    <button type="submit" onsubmit="window.location.href='live.html'">Start Match</button>
+    </form>
+
+  <script src="score.js"></script>
+</body>
+</html>

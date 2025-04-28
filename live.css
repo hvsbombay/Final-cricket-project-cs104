@@ -1,0 +1,73 @@
+body { font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 1rem; 
+    }
+
+.live-container { max-width: 800px;
+                margin: auto;
+                background: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                }
+
+h1, h2 { text-align: center;
+        color: #222; }
+
+#scoreDisplay { font-size: 1.4rem;
+                font-weight: bold;
+                text-align: center; 
+                margin-bottom: 1.5rem; }
+
+#batterTable { width: 100%; 
+                border-collapse: collapse; 
+                margin-bottom: 2rem; }
+
+#batterTable th, #batterTable td { border: 1px solid #ccc; 
+                                    padding: 0.5rem; 
+                                    text-align: center; }
+
+#bowlerInfo { text-align: center; 
+                font-size: 1rem; 
+                margin-bottom: 2rem; 
+                font-weight: 500; 
+                color: #333;
+            }
+
+.scoring-buttons { display: flex; 
+                    flex-wrap: wrap;
+                    justify-content: center; 
+                    gap: 1rem; 
+                    margin-bottom: 2rem; 
+                }
+
+.scoring-buttons button { padding: 0.75rem 1.5rem; 
+                        font-size: 1rem; 
+                        background-color: #28a745; 
+                        color: white; 
+                        border: none; 
+                        border-radius: 6px;
+                        cursor: pointer; 
+                        transition: background-color 0.3s ease;
+                    }
+
+.scoring-buttons button:hover { 
+    background-color: #1e7e34; 
+}
+
+#scorecardBtn { display: block;
+                margin: auto; 
+                padding: 0.8rem 2rem; 
+                background-color: #007bff; 
+                color: white; 
+                border: none; 
+                border-radius: 6px; 
+                cursor: pointer; 
+                font-size: 1rem; 
+                transition: background-color 0.3s ease; 
+            }
+
+#scorecardBtn:hover { 
+    background-color: #0056b3; 
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Match | Howzatt</title>
+  <link rel="stylesheet" href="live.css">
+</head>
+<body>
+  <div class="live-container">
+    <h1 id="matchTitle">Live Match</h1>
+    <div id="scoreDisplay"></div>
+
+    <h2>Batters</h2>
+    <table id="batterTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Runs</th>
+          <th>Balls</th>
+          <th>4s</th>
+          <th>6s</th>
+          <th>Strike Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="strikeBatter">
+          <td id="strikeBatterName"></td>
+          <td id="strikeBatterRuns">0</td>
+          <td id="strikeBatterBalls">0</td>
+          <td id="strikeBatterFours">0</td> 
+          <td id="strikeBatterSixes">0</td>
+          <td id="strikeBatterStrikeRate">0</td>
+        </tr>
+        <tr id="nonStrikeBatter">
+          <td id="nonStrikeBatterName"></td>
+          <td id="nonStrikeBatterRuns">0</td>
+          <td id="nonStrikeBatterBalls">0</td>
+          <td id="nonStrikeBatterFours">0</td>
+          <td id="nonStrikeBatterSixes">0</td>
+          <td id="nonStrikeBatterStrikeRate">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Bowler</h2>
+    <div id="bowlerInfo"></div>
+
+    <div class="scoring-buttons">
+      <button class="runBtn" data-run="0">0</button>
+      <button class="runBtn" data-run="1">1</button>
+      <button class="runBtn" data-run="2">2</button>
+      <button class="runBtn" data-run="3">3</button>
+      <button class="runBtn" data-run="4">4</button>
+      <button class="runBtn" data-run="5">5</button>
+      <button class="runBtn" data-run="6">6</button>
+      <button class="runBtn" data-run="Wicket">Wicket</button>
+    </div>
+    <button id="scorecardBtn" onclick="window.location.href='scorecard.html'">View Scorecard</button>
+  </div>
+
+<script src="score.js"></script>
+</body>
+</html>
+
